@@ -1,0 +1,600 @@
+@charset "UTF-8";
+/* Bloque */
+.noticia {
+  background-color: red;
+  border: 1px solid black;
+}
+
+.noticia__titulo {
+  font-size: 30px;
+}
+
+.noticia__titulo--modificador {
+  color: pink;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  /* Tamaño de la fuente raiz para el documento 2rem = 16px * 2 */
+}
+
+body {
+  font-family: 'Roboto-Leo', sans-serif;
+  background-color: #121212;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+/* --- General o Unico */
+.titulo-documento {
+  font-size: 4rem;
+  width: 50%;
+  min-width: 320px;
+}
+
+.titulo-documento .titulo-documento--destacado {
+  color: #E0FF00;
+}
+
+.titulo-documento--w100 {
+  width: 100%;
+}
+
+.subtitulo-documento {
+  font-size: 2rem;
+  margin: 3rem 0;
+}
+
+.flex-center, .flex-strech {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.flex-strech {
+  align-items: stretch;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* --- NAVEGACION ---*/
+.navegacion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.navegacion .navegacion__link-logo {
+  height: 32px;
+}
+
+.navegacion .navegacion__logo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.navegacion .navegacion__enlace {
+  display: inline-block;
+  padding: 1rem;
+}
+
+/* --- Contenedor --- */
+.contenedor {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* --- Secciones --- */
+.seccion {
+  /* height: 70vh; */
+  padding: 2rem 0;
+}
+
+.seccion__titulo {
+  font-size: 3rem;
+  letter-spacing: 5px;
+  padding: 2rem 0;
+}
+
+.seccion__parrafo {
+  background-color: #fff;
+  border: 2px solid #e5e5e5;
+  padding: 1rem;
+}
+
+.seccion__eslogan {
+  color: #e5e5e5;
+  opacity: 0.7;
+  text-align: center;
+}
+
+.seccion__titulo--caja {
+  padding: 1rem 2rem;
+  border: 1px solid #E0FF00;
+  border-radius: 4px;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  transition: all 1s;
+}
+
+.seccion__titulo--caja:hover {
+  background-color: #E0FF00;
+  color: #000;
+  cursor: pointer;
+}
+
+/* Membresia */
+.membresia {
+  background-color: #121212;
+  border: 3px solid #E0FF00;
+  padding: 2rem 1rem;
+  border-radius: 8px;
+  color: #fff;
+  flex-basis: 40%;
+}
+
+.membresia .membresia__titulo {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.membresia .membresia__flex {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #fff;
+}
+
+.membresia .membresia__flex .membresia__precio {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.membresia .membresia__subtitulo {
+  color: #fff;
+  opacity: 0.5;
+  font-weight: 400;
+  padding: 1rem 0;
+}
+
+.membresia.membresia--beca {
+  background-color: #E0FF00;
+  color: #000;
+}
+
+.membresia.membresia--beca .membresia__titulo {
+  color: #121212;
+}
+
+.membresia.membresia--beca .membresia__flex {
+  border-bottom-color: #121212;
+}
+
+.membresia.membresia--beca .membresia__subtitulo {
+  color: #121212;
+}
+
+.membresia .membresia__item {
+  font-weight: 600;
+}
+
+.membresia__item--tachado {
+  text-decoration: line-through;
+}
+
+.seccion--membresias .flex-center {
+  align-items: stretch;
+}
+
+.seccion.seccion--membresias {
+  min-height: 50vh;
+  height: auto;
+}
+
+/* Seccion Cursos Destacados - Index */
+.seccion.seccion--destacados {
+  background-color: #fff;
+  height: auto;
+  min-height: 50vh;
+}
+
+.seccion--destacados .seccion__titulo {
+  color: #121212;
+}
+
+.destacado {
+  box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  flex-basis: 30%;
+  overflow: hidden;
+}
+
+.destacado__body {
+  padding: 1rem;
+}
+
+.destacado__footer {
+  background-color: #323232;
+  width: 100%;
+}
+
+.destacado__titulo {
+  color: #121212;
+  margin-bottom: 1rem;
+}
+
+.destacado__parrafo, .destacado__nivel {
+  font-size: 14px;
+  font-weight: 300;
+  padding: 1rem 0;
+}
+
+.destacado__precio {
+  text-align: right;
+  display: block;
+}
+
+.destacado__enlace {
+  color: #E0FF00;
+  display: block;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+/* --- Seccion Pagos - Index --- */
+.seccion.seccion--pagos {
+  background-color: #EBEBEB;
+  height: auto;
+  color: #000;
+}
+
+.payment {
+  flex-basis: 25%;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.payment__titulo {
+  font-weight: 400;
+  color: #323232;
+}
+
+.payment__enlace {
+  color: #5395FA;
+  font-size: 12px;
+}
+
+.payment.payment--more {
+  flex-basis: 0;
+  flex-grow: 0;
+}
+
+.payments {
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 1rem;
+}
+
+/* --- Redes - Index --- */
+.redes {
+  padding: 1rem 0;
+}
+
+.redes .redes__icono {
+  font-size: 32px;
+  transition: color 0.7s;
+}
+
+.redes .redes__icono:hover {
+  color: #E0FF00;
+}
+
+/* --- Footer --- */
+.footer {
+  padding: 2rem;
+  color: #fff;
+}
+
+.footer .flex-center {
+  justify-content: space-between;
+}
+
+.footer .footer__autor {
+  text-decoration: underline;
+  font-weight: 300;
+}
+
+/* --- Seccion Cursos - Cursos --- */
+.cursos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.curso {
+  flex-basis: 300px;
+  flex-grow: 1;
+  max-width: 360px;
+  background-color: #323232;
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.curso.curso--dark {
+  background-color: #323232;
+}
+
+.curso__flex {
+  display: flex;
+  gap: 10px;
+}
+
+.curso__icono {
+  font-size: 32px;
+  color: #E0FF00;
+}
+
+.curso__header {
+  width: 50px;
+  padding: 5px;
+  align-self: flex-start;
+}
+
+.curso__body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.curso__parrafo {
+  text-align: right;
+  color: #fff;
+  font-size: 12px;
+}
+
+.curso__precio {
+  position: absolute;
+  background-color: #E0FF00;
+  color: #000;
+  bottom: 10px;
+  left: 10px;
+  font-size: 12px;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+/* --- Seccion Inversores - Equipo --- */
+.seccion--inversores {
+  background-color: #fff;
+}
+
+.seccion--inversores .seccion__titulo {
+  color: #121212;
+}
+
+.grid-contenedor {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 300px 300px;
+  grid-template-areas: ". item1 ." "item2 item3 item4";
+}
+
+.grid-hijo {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  text-align: center;
+  gap: 10px;
+}
+
+.item1 {
+  grid-area: item1;
+}
+
+.item2 {
+  grid-area: item2;
+}
+
+.item3 {
+  grid-area: item3;
+}
+
+.item4 {
+  grid-area: item4;
+}
+
+.inversor__img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+/* Seccion Contacto - Contacto.html */
+.seccion--contacto .seccion__parrafo {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.mapa {
+  position: relative;
+  width: 500px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.mapa__iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.mapa__texto {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background-color: #E0FF00;
+  color: #000;
+  opacity: 1;
+  transition: top 1.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.mapa:hover .mapa__texto {
+  top: 0;
+}
+
+/* --- Seccion 1 - PreguntasFrecuentes-html --- */
+.seccion--pf {
+  background-image: linear-gradient(to bottom, black 80%, #E0FF00 100%);
+}
+
+.seccion__w50 {
+  width: 50%;
+  height: 300px;
+  padding: 2rem 0;
+}
+
+.seccion__img-pf {
+  width: 100%;
+  height: 100%;
+}
+
+.metodos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.metodo {
+  width: 50%;
+  flex-shrink: 0;
+  padding: 1rem;
+}
+
+.metodo__pregunta {
+  margin-bottom: 1rem;
+}
+
+.metodo__respuesta {
+  color: rgba(229, 229, 229, 0.314);
+}
+
+/* Media querys */
+@media (max-width: 768px) {
+  .navegacion {
+    flex-direction: column;
+  }
+  .contenedor {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .flex-strech {
+    flex-direction: column;
+  }
+  .titulo-documento {
+    font-size: 3rem;
+    width: 100%;
+  }
+  .seccion {
+    height: auto;
+  }
+  .seccion__titulo {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .flex-center {
+    flex-direction: column;
+  }
+  .destacado {
+    width: 90%;
+    flex-basis: auto;
+  }
+  .payments.flex-center {
+    align-items: stretch;
+  }
+  .payment {
+    justify-content: flex-start;
+  }
+  .payment--more {
+    align-self: flex-end;
+  }
+  .redes .flex-center {
+    flex-direction: row;
+  }
+  /* Cursos.html */
+  .cursos {
+    flex-direction: column;
+  }
+  .curso {
+    flex-basis: auto;
+  }
+  /* Equipo.html */
+  .grid-contenedor {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "item1" "item2" "item3" "item4";
+  }
+  /* Contacto.html */
+  .mapa {
+    position: relative;
+    width: 100%;
+  }
+  /* PreguntasFrecuentes.html */
+  .metodos {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .metodo {
+    width: 100%;
+  }
+}
+
+.navegacion__enlace {
+  transition: all 1s;
+}
+
+.navegacion__enlace:hover {
+  color: #E0FF00;
+  border: 2px solid #E0FF00;
+  border-radius: 5px;
+  text-decoration: line-through;
+}
